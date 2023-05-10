@@ -4,6 +4,7 @@ const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
+const { v4 } = require("uuid");
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/client/pages/home.html');
@@ -19,7 +20,9 @@ app.get('/assets*', (req, res) => {
 });
 
 io.on('connection', (socket) => {
+    const UserRoomID = v4().slice(0, 12).replace('-', '');
     console.log('a user connected');
+    console.log('his room code is ' + UserRoomID);
     socket.on('disconnect', () => {
         console.log('user disconnected');
     });

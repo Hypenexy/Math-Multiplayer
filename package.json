@@ -1,0 +1,11 @@
+{
+  "name": "math-multiplayer",
+  "version": "1.0.0",
+  "description": "Do or compete math with multiple people",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hypenexy",
+  "license": "MIT"
+}

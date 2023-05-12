@@ -1,0 +1,130 @@
+*::selection{
+    background: rgba(244, 68, 68, 0.652);
+}
+body{
+    background-color: rgb(250, 92, 44);
+}
+.main{
+    padding-top: 30vh;
+}
+.mainpanel{
+    background: rgb(229, 215, 215, .9);
+    border-radius: 24px 24px 0 0;
+    padding: 24px;
+    max-width: 600px;
+}
+.mainpanel h1{
+    color: rgb(150, 26, 26);
+    font-weight: 500;
+}
+.mainpanel .modes, .mainpanel .join{
+    padding: 10px 0;
+}
+.mainpanel .modes button, .mainpanel .join button, .mainpanel .join input{
+    background: #eee;
+    padding: 12px;
+    border-radius: 99px;
+    width: calc(50% - 2px);
+    max-width: 200px;
+    transition: .2s;
+}
+.mainpanel .modes button:hover, .mainpanel .modes button:focus-visible{
+    transform: translateY(-3px);
+}
+.mainpanel .modes a:first-child button{
+    color: #fff;
+    background: rgb(26, 120, 80);
+}
+.mainpanel .modes a:first-child button:hover, .mainpanel .modes a:first-child button:focus-visible{
+    box-shadow: 0 3px rgb(26, 120, 80, .5);
+}
+.mainpanel .modes a:last-child button{
+    color: #fff;
+    background: rgb(150, 26, 26);
+}
+.mainpanel .modes a:last-child button:hover, .mainpanel .modes a:last-child button:focus-visible{
+    box-shadow: 0 3px rgb(150, 26, 26, .5);
+}
+.mainpanel .modes button:active{
+    transform: initial;
+    box-shadow: initial!important;
+    transition: .05s;
+}
+
+.mainpanel .join button{
+    border-radius: 0 99px 99px 0;
+    background: #e1e1e1;
+    max-width: initial;
+    width: 80px;
+    transition: .1s;
+}
+.mainpanel .join button:hover, .mainpanel .join button:focus-visible{
+    background: #bbb;
+}
+.mainpanel .join input{
+    border-radius: 99px 0 0 99px;
+    max-width: initial;
+    width: calc(100% - 80px);
+}
+
+@media screen and (max-width: 360px) {
+    .mainpanel .modes button{
+        display: block;
+        width: 100%;
+        margin: 6px 0;
+        max-width: initial;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .mainpanel .modes{
+        text-align: center;
+    }
+}
+
+.mainpanel .label{
+    background: #eeeeee44;
+    padding: 12px;
+    border-radius: 12px;
+    margin: 10px 0;
+}
+
+header{
+    display: block;
+    position: relative;
+    padding: 24px 0;
+    background: rgb(240, 240, 240, .9);
+}
+header a{
+    color: #222;
+    text-decoration: initial;
+    font-size: 18px;
+}
+header a:hover, header a:focus-visible{
+    color: #000;
+    text-decoration: underline;
+}
+header a:first-of-type{
+    color: #111;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-right: 15px;
+}
+
+header img{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info{
+    background: rgb(229, 215, 215, .9);
+}
+.panel{
+    padding: 32px 0;
+}
+.panel h2{
+    padding: 16px 0;
+    font-weight: 400;
+}

@@ -12,8 +12,14 @@ app.get('/', (req, res) => {
 app.get('/collaborative', (req, res) => {
     res.sendFile(__dirname + '/client/pages/collaborative.html');
 });
+app.get('/collaborative', (req, res) => {
+    res.sendFile(__dirname + '/client/style/app.css');
+});
 app.get('/app', (req, res) => {
     res.sendFile(__dirname + '/client/style/app.css');
+});
+app.get('/main', (req, res) => {
+    res.sendFile(__dirname + '/client/style/main.css');
 });
 app.get('/assets*', (req, res) => {
     res.sendFile(__dirname + '/client/' + req.url);

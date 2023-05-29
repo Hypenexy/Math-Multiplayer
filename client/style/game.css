@@ -1,0 +1,27 @@
+#loggingIn{
+    display: block;
+    margin: auto 0;
+    transition: .3s;
+    text-align: center;
+    margin-top: 150px;
+}
+
+#loggingIn.transition{
+    visibility: hidden;
+    transform: translateY(-15px);
+    opacity: 0;
+}
+
+.collab{
+    background: rgb(66, 208, 146);
+}
+.collab header{
+    background: rgb(255,255,255);
+    text-align: center;
+}
+.collab header p{
+    padding: 12px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: aliceblue;
+}

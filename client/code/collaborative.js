@@ -6,7 +6,7 @@ socket.on("logon", (success, error) => {
     var pageUrl = '?rid=' + roomId;
     window.history.pushState('', '', pageUrl);
     loadGame();
-    const loggingIn = document.getElementById("loggingIn")
+    const loggingIn = document.getElementById("loggingIn");
     loggingIn.classList.add("transition");
     setTimeout(() => {
         loggingIn.remove();
@@ -19,6 +19,6 @@ document.body.appendChild(header);
 function loadGame(){
     header.classList.remove("transition");
     const roomIdEl = document.createElement("p");
-    roomIdEl.innerHTML = roomId;
+    roomIdEl.innerHTML = "Room code <a>" + roomId + "</a>";
     header.appendChild(roomIdEl);
 }

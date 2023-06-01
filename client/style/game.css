@@ -18,10 +18,17 @@
 .collab header{
     background: rgb(255,255,255);
     text-align: center;
+    padding: 8px;
 }
 .collab header p{
+    user-select: none;
     padding: 12px;
     border-radius: 8px;
     display: inline-block;
     background-color: aliceblue;
+}
+
+.collab header a{
+    user-select: text;
+    font-weight: 500;
 }

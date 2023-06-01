@@ -61,7 +61,7 @@ input{
 ::-webkit-scrollbar-corner { background: #1a1a1a; }
 
 ::selection{
-    background-color: #4b23ff
+    background: rgba(244, 68, 68, 0.652);
     /*background-color: #4b23ffcc; < less vibrant*/
 }
 

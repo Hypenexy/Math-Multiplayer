@@ -15,6 +15,9 @@ app.get('/collaborative', (req, res) => {
 app.get('/collaborativejs', (req, res) => {
     res.sendFile(__dirname + '/client/code/collaborative.js');
 });
+app.get('/calculatorjs', (req, res) => {
+    res.sendFile(__dirname + '/client/code/calculator.js');
+})
 app.get('/app', (req, res) => {
     res.sendFile(__dirname + '/client/style/app.css');
 });
